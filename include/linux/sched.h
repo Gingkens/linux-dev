@@ -2429,6 +2429,7 @@ struct sched_cache_stat {
 	unsigned long next_scan;
 	unsigned long footprint;
 	int cpu;
+	struct cpumask visited_cpus;
 } ____cacheline_aligned_in_smp;
 
 #else
